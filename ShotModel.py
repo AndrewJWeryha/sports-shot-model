@@ -8,11 +8,10 @@ from sklearn.linear_model import LogisticRegression
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 1000)
 
-#Line 13-15: Stores the exact file paths to variables using raw string notation (r"..."), which prevents
-#Windows backslashes (\) from causing escape character errors.
-train_path = r"C:\training.csv"
-test_path = r"C:testing.csv\testing.csv"
-sub_path = r"C:\submission.csv"
+# Line 13-15: Uses relative file paths instead of absolute local machine paths.
+train_path = "data/training.csv"
+test_path = "data/testing.csv"
+sub_path = "data/submission.csv"
 
 #Line 19-21: Prints a status message and uses pd.read_csv() to decompress and read the training and
 #testing datasets directly into pandas DataFrames in memory.
