@@ -10,9 +10,9 @@ pd.set_option('display.width', 1000)
 
 #Line 13-15: Stores the exact file paths to variables using raw string notation (r"..."), which prevents
 #Windows backslashes (\) from causing escape character errors.
-train_path = r"C:\Users\Drew6\OneDrive\Documents\OKC\training.csv\training.csv"
-test_path = r"C:\Users\Drew6\OneDrive\Documents\OKC\testing.csv\testing.csv"
-sub_path = r"C:\Users\Drew6\OneDrive\Documents\submission.csv"
+train_path = r"C:\training.csv"
+test_path = r"C:testing.csv\testing.csv"
+sub_path = r"C:\submission.csv"
 
 #Line 19-21: Prints a status message and uses pd.read_csv() to decompress and read the training and
 #testing datasets directly into pandas DataFrames in memory.
